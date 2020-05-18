@@ -138,51 +138,49 @@ function PizzaForm() {
           />
         </FormGroup>
         <FormGroup>
-          <Label>
-            Toppings
-            <div>
-              <CustomInput
-                type='checkbox'
-                id='toppings1'
-                name='toppings1'
-                label='Pepperoni'
-                checked={formState.toppings1}
-                onChange={changeHandler}
-              />
-              <CustomInput
-                type='checkbox'
-                id='toppings2'
-                name='toppings2'
-                label='Mushrooms'
-                checked={formState.toppings2}
-                onChange={changeHandler}
-              />
-              <CustomInput
-                type='checkbox'
-                id='toppings3'
-                name='toppings3'
-                label='Sausage'
-                checked={formState.toppings3}
-                onChange={changeHandler}
-              />
-              <CustomInput
-                type='checkbox'
-                id='toppings4'
-                name='toppings4'
-                label='Extra cheese'
-                checked={formState.toppings4}
-                onChange={changeHandler}
-              />
-              <CustomInput
-                type='checkbox'
-                id='toppings5'
-                name='toppings5'
-                label='Green peppers'
-                checked={formState.toppings5}
-                onChange={changeHandler}
-              />
-            </div>
-          </Label>
+          <Label>Toppings</Label>
+          <div>
+            <CustomInput
+              type='checkbox'
+              id='toppings1'
+              name='toppings1'
+              label='Pepperoni'
+              checked={formState.toppings1}
+              onChange={changeHandler}
+            />
+            <CustomInput
+              type='checkbox'
+              id='toppings2'
+              name='toppings2'
+              label='Mushrooms'
+              checked={formState.toppings2}
+              onChange={changeHandler}
+            />
+            <CustomInput
+              type='checkbox'
+              id='toppings3'
+              name='toppings3'
+              label='Sausage'
+              checked={formState.toppings3}
+              onChange={changeHandler}
+            />
+            <CustomInput
+              type='checkbox'
+              id='toppings4'
+              name='toppings4'
+              label='Extra cheese'
+              checked={formState.toppings4}
+              onChange={changeHandler}
+            />
+            <CustomInput
+              type='checkbox'
+              id='toppings5'
+              name='toppings5'
+              label='Green peppers'
+              checked={formState.toppings5}
+              onChange={changeHandler}
+            />
+          </div>
         </FormGroup>
         <Button disabled={buttonDisabled} color='primary' className='shadow'>
           Place Order
