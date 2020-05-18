@@ -1,0 +1,37 @@
+[
+  {
+    "id": "0",
+    "title": "Cheese Pizza",
+    "about": "Your favorite cheese pizza made with classic marinara sauce topped with mozzarella cheese.",
+    "price": "$7.99",
+    "img": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Cheese.png"
+  },
+  {
+    "id": "1",
+    "title": "Pepperoni Pizza",
+    "about": "This gourmet pizza is ideal for easy late night delivery, complete with mozzarella cheese and pepperoni.",
+    "price": "$8.99",
+    "img": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Pepperoni.png"
+  },
+  {
+    "id": "2",
+    "title": "Meat Lover's® Pizza",
+    "about": "Meat lover's pizza is the perfect game day pizza, packed with pepperoni, Italian sausage, ham, bacon, seasoned pork and beef.",
+    "price": "$7.99",
+    "img": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Meat_Lovers.png"
+  },
+  {
+    "id": "3",
+    "title": "Supreme Pizza",
+    "about": "Enjoy this freshly prepared pizza for family dinner or a group lunch, including pepperoni, seasoned pork, green bell peppers and red onions.",
+    "price": "$10.99",
+    "img": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Supreme.png"
+  },
+  {
+    "id": "4",
+    "title": "Create Your Own",
+    "about": "Create your own pizza with Pizza Hut's quality ingredients and crusts. Onions, sausage, peppers, olives, pineapple—whatever you crave!",
+    "price": "$7.99",
+    "img": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Create_Your_Own.png"
+  }
+]
