@@ -28,7 +28,8 @@ const formSchema = yup.object().shape({
   toppings2: yup.boolean(),
   toppings3: yup.boolean(),
   toppings4: yup.boolean(),
-  toppings5: yup.boolean()
+  toppings5: yup.boolean(),
+  switch: yup.boolean()
 });
 
 function PizzaForm() {
@@ -44,7 +45,8 @@ function PizzaForm() {
     toppings2: false,
     toppings3: false,
     toppings4: false,
-    toppings5: false
+    toppings5: false,
+    switch: false
   });
 
   const [errorState, setErrorState] = useState({
@@ -59,7 +61,8 @@ function PizzaForm() {
     toppings2: '',
     toppings3: '',
     toppings4: '',
-    toppings5: ''
+    toppings5: '',
+    switch: ''
   });
 
   const [buttonDisabled, setButtonDisabled] = useState(true);
@@ -92,7 +95,9 @@ function PizzaForm() {
     e.persist();
     validate(e);
     const value =
-      e.target.type === 'checkbox' ? e.target.checked : e.target.value;
+      (e.target.type === 'checkbox') | 'switch' | 'radio'
+        ? e.target.checked
+        : e.target.value;
     setFormState({ ...formState, [e.target.name]: value });
   };
 
@@ -114,7 +119,8 @@ function PizzaForm() {
       toppings2: false,
       toppings3: false,
       toppings4: false,
-      toppings5: false
+      toppings5: false,
+      switch: false
     });
   };
 
@@ -251,6 +257,19 @@ function PizzaForm() {
                 </FormGroup>
               </Col>
             </Row>
+            <FormGroup>
+              <Label for='exampleCheckbox'>Choice of Substitute</Label>
+              <div>
+                <CustomInput
+                  type='switch'
+                  id='switch'
+                  name='switch'
+                  label='Gluten Free Crust (+ $1.00)'
+                  checked={formState.switch}
+                  onChange={changeHandler}
+                />
+              </div>
+            </FormGroup>
             <FormGroup>
               <Label for='text'>Special Instructions</Label>
               <Input
