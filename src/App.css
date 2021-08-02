@@ -1,38 +1,54 @@
-.App {
+body {
+  background-color: #f9f9f9 !important;
+}
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem !important;
+}
+
+.jumbotron {
+  height: 400px;
+  position: relative;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+.jumbotron::before {
+  content: '';
+  background-image: url('./Assets/Pizza.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.8;
+}
+
+.jumbotron div {
+  z-index: 1;
+}
+
+.jumbotron h1 {
+  font-weight: 700;
+}
+
+.jumbotron button {
+  font-size: 1.1rem;
+}
+
+.create-pizza {
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 700;
+}
+
+.card-heading {
+  font-family: 'Lobster', cursive;
+}
+footer {
+  padding: 2.5rem 0;
+  color: #999;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #ffffff;
+  border-top: 0.05rem solid #e5e5e5;
+  margin-top: 5rem;
 }
